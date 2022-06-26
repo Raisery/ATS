@@ -1,0 +1,32 @@
+.navbar { 
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    width: 100%;
+    background: $primary_color;
+    box-shadow: 0px 1px 10px 1px $primary_color;
+
+    &__logo {
+        margin-left: 5%;
+    }
+
+    &__tel {
+        margin-right: 5%;
+    }
+
+    & ul {
+        top: 0;
+        left: 50%;
+        display: flex;
+        height: 100%;
+        list-style-type: none;
+        & li {
+            display: flex;
+            align-items: center;
+            margin: 10px;
+        }
+
+    }
+}

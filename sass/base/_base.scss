@@ -1,0 +1,31 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    & *{
+        box-sizing: border-box;
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+.invisible {
+    position: absolute;
+    top : -1000px;
+}
+
+.separation {
+    width: 100%;
+    color: $secondary_color;
+}
+
+a {
+    text-decoration: none;
+}
