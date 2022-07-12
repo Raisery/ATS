@@ -5,11 +5,14 @@ body * {
     font-family: 'Roboto', sans-serif;
 }
 
-nav {
-    font-size: 18px;
-    font-weight: 500;
+.navbar {
+    font-size: 22px;
+    font-weight: 600;
     & * {
-        color: white;
+        color: $primary_color;
+    }
+    &__tel {
+        font-size: 26px;
     }
 }
 
@@ -24,4 +27,10 @@ h2 {
 p {
     font-size: 20px;
     font-weight: 300;
+}
+
+#accueil {
+    & h1 {
+        color: $neutral-color;
+    }
 }
