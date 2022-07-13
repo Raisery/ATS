@@ -2,16 +2,24 @@
     position: relative;
     width: 100%;
     height: 80vh;
-    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-top: 50px;
     background: rgb(184, 174, 174);
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
 
-    & .accueil__text {
+    & .accueil__center {
+        z-index: 2;
         position: absolute;
-        bottom: 0px;
+        height: 60vh;
+    }
+
+    & .accueil__text {
+        z-index: 2;
+        position: absolute;
+        bottom: 0;
         padding: 20px;
         display: flex;
         flex-direction: column;
@@ -28,7 +36,9 @@
         }
     }
 
-    & img {
-        width: 100%;
+    & .accueil__bg {
+       width: 100%;
+       z-index: 0;
+       filter:brightness(1.5)
     }
 }
