@@ -17,10 +17,10 @@
             </div>
             <div>
                 <ul>
-                    <li>Nos Taxis</li>
-                    <li>Médical</li>
-                    <li>Scolaire</li>
-                    <li>Loisirs</li>
+                    <li onclick="scrollToTarget('nos-taxis')">Nos Taxis</li>
+                    <li onclick="scrollToTarget('medical')">Médical</li>
+                    <li onclick="scrollToTarget('scolaire')">Scolaire</li>
+                    <li onclick="scrollToTarget('loisir')">Loisirs</li>
                     <li>Contact</li>
                 </ul>
             </div>
@@ -38,10 +38,13 @@
             <img class="accueil__center"src="images/logo/Taxi-Tam-logo-vecto.svg" alt="">
             <img class="accueil__bg" src="images/road5.jpg" alt="">
         </div>
+        <div class="google-review">
+            <img src="images/dev/avis.PNG">
+        </div>
         <div id=" prestations">
             <hr class="separation">
             <a href="#">
-                <div class="prestation">
+                <div id="nos-taxis" class="prestation">
                     <div class="prestation__texte prestation__texte--left">
                         <h2>Nos Taxis</h2>
                         <p>Some great placeholder content for the first featurette here. Imagine some exciting prose
@@ -52,7 +55,7 @@
             </a>
             <hr class="separation">
             <a href="#">
-                <div class="prestation">
+                <div id="medical" class="prestation">
                     <div class="prestation__img"><img src="images/icones/medical.jpg" alt=""></div>
                     <div class="prestation__texte prestation__texte--right">
                         <h2>Médical</h2>
@@ -63,7 +66,7 @@
             </a>
             <hr class="separation">
             <a href="#">
-                <div class="prestation">
+                <div id="scolaire" class="prestation">
                     <div class="prestation__texte prestation__texte--left">
                         <h2>Scolaire</h2>
                         <p>Some great placeholder content for the first featurette here. Imagine some exciting prose
@@ -74,18 +77,7 @@
             </a>
             <hr class="separation">
             <a href="#">
-                <div class="prestation">
-                    <div class="prestation__img"><img src="images/icones/professionnel.jpg" alt=""></div>
-                    <div class="prestation__texte prestation__texte--right">
-                        <h2>Professionnel</h2>
-                        <p>Some great placeholder content for the first featurette here. Imagine some exciting prose
-                            here.</p>
-                    </div>
-                </div>
-            </a>
-            <hr class="separation">
-            <a href="#">
-                <div class="prestation">
+                <div id="loisir" class="prestation">
                     <div class="prestation__texte">
                         <h2>Loisirs</h2>
                         <p>Some great placeholder content for the first featurette here. Imagine some exciting prose
@@ -97,8 +89,12 @@
 
         </div>
     </main>
+    <footer>
+
+    </footer>
 </body>
 
+<script src="script/index.js"></script>
 <script src="https://kit.fontawesome.com/ec64a245e1.js" crossorigin="anonymous"></script>
 
 </html>
