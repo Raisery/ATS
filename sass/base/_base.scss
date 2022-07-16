@@ -29,3 +29,12 @@ body {
 a {
     text-decoration: none;
 }
+
+.separation {
+    height: 5px;
+    background: $secondary_color;
+    border: none;
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+}
