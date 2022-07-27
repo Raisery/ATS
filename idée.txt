@@ -10,3 +10,14 @@ mdp : @TaxiTAM88
 
 estimation trajet/prix
 https://www.fj13.fr/?gclid=CjwKCAjw2rmWBhB4EiwAiJ0mtVYW33cn3E43Ukl6TsXUarPlgva9WiWMbZGbwp9Yf-7hlttZhqnU2RoCb9YQAvD_BwE
+
+carte de visite fixée sur la page
+
+icones :
+-nos taxis : photo de groupe des taxis de l'asso
+-medic : photo conventionnement vitre taxi / photo ambulance
+-scolaire: photo enfant avec sac d'école de dos
+-photo de feu d'artifices / coupe de champagne
+
+pages:
+-taxis : affichage d'info dynamique en fonction du taxi. (pedigrée fiche chauffeur + voiture)
