@@ -3,6 +3,7 @@ async function getProfilsData() {
         .then(response => {
             return response.json();
         })
+        console.log(profils)
     return profils
 }
 
