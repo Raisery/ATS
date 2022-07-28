@@ -3,7 +3,7 @@ async function getProfilsData() {
         .then(response => {
             return response.json();
         })
-        console.log(profils)
+    console.log(profils)
     return profils
 }
 
@@ -13,7 +13,7 @@ function getProfilUI(profil) {
     const imgContainer = document.createElement('div');
     imgContainer.classList.add('card-profil__img');
     const photo = document.createElement("img");
-    photo.setAttribute("src",`./images/profils/${profil.id}/ensemble.jpg`);
+    photo.setAttribute("src", `./images/profils/${profil.id}/ensemble.jpg`);
     const header = document.createElement("div");
     header.classList.add('card-profil__header');
     const name = document.createElement("p");
@@ -28,14 +28,16 @@ function getProfilUI(profil) {
     header.appendChild(name);
     header.appendChild(num);
     card.appendChild(header);
-
+    card.addEventListener('click', e => {
+        router("profil", profil.id)
+    })
     return card
 }
 
 async function displayProfils() {
     const section = document.querySelector(".profils-container");
     const profils = await getProfilsData();
-    for(let profil of profils) {
+    for (let profil of profils) {
         section.appendChild(getProfilUI(profil))
     }
 }
