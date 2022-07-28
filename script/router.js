@@ -2,11 +2,15 @@ const ROUTES = [
     {
         path: "taxis.html",
         name: "taxis"
+    },
+    {
+        path: "index.html",
+        name: "accueil"
     }
 ]
 
 function router(target) {
     const route = ROUTES.find(r => r.name == target )
-    if(!route) return document.body.innerHTML = `<h1>ERREUR 404</h1>`;
+    if(!route) window.location.href = "not_found.html";
     window.location.href = route.path;
 }

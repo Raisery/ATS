@@ -7,7 +7,7 @@
     <title>ATM</title>
     <link rel="icon" type="image/x-icon" href="/images/icones/favicon.ico">
     <link href="css/index.css" rel="stylesheet" type="text/css" />
-    
+
     <script src="https://kit.fontawesome.com/ec64a245e1.js" crossorigin="anonymous"></script>
 </head>
 
@@ -19,9 +19,9 @@
             </div>
             <div>
                 <ul>
+                    <li onclick="router('accueil')">Accueil</li>
                     <li onclick="router('taxis')">Nos Taxis</li>
                     <li onclick="router('medic')">Médical</li>
-                    <li onclick="router('school')">Scolaire</li>
                     <li onclick="router('hobby')">Loisirs</li>
                     <li>Contact</li>
                 </ul>
@@ -33,59 +33,40 @@
     </header>
     <main>
         <div id="accueil"">
-            <div class="accueil__text">
-                <h1>Conventionné CPAM</h1>
-                <h2>7j/7</h2>
-            </div>
-            <img class="accueil__center"src="images/logo/Taxi-Tam-logo-vecto.svg" alt="">
-            <img class="accueil__bg" src="images/road5.jpg" alt="">
+            <div class=" accueil__text">
+            <h1>Conventionné CPAM</h1>
+            <h2>7j/7</h2>
         </div>
-        <div class="google-review">
+        <img class="accueil__center" src="images/logo/Taxi-Tam-logo-vecto.svg" alt="">
+        <img class="accueil__bg" src="images/accueil/road5.jpg" alt="">
+        </div>
+        <hr class="separation">
+        <section class="google-review">
             <img src="images/dev/avis.PNG">
-        </div>
-        <div id="prestations">
-            <hr class="separation">
-            <a href="#">
-                <div id="nos-taxis" class="prestation">
-                    <div class="prestation__img"><img src="images/icones/taxi.svg" alt=""></div>
-                    <div class="prestation__texte">
-                        <h2>Nos Taxis</h2>
-                    </div>
-                </div>
-            </a>
-            <a href="#">
-                <div id="medical" class="prestation">
-                    <div class="prestation__img"><img src="images/icones/medic.svg" alt=""></div>
-                    <div class="prestation__texte">
-                        <h2>Médical</h2>
-                    </div>
-                </div>
-            </a>
-            <a href="#">
-                <div id="scolaire" class="prestation">
-                    <div class="prestation__img"><img src="images/icones/school.svg" alt=""></div>
-                    <div class="prestation__texte">
-                        <h2>Scolaire</h2>
-                    </div>
-                </div>
-            </a>
-            <a href="#">
-                <div id="loisir" class="prestation">
-                    <div class="prestation__img"><img src="images/icones/loisir.svg" alt=""></div>
-                    <div class="prestation__texte">
-                        <h2>Loisirs</h2>
-                    </div>
-                </div>
-            </a>
-
-        </div>
+        </section>
+        <hr class="separation">
+        <section class="estimateur">
+            <img src="./images/dev/estimateur.png">
+        </section>
+        <hr class="separation">
+        <section id="prestations">
+            <div id="nos-taxis" class="prestation" onclick="router('taxis')">
+                <div class="prestation__img"><img src="images/icones/taxis.jpg" alt=""></div>
+            </div>
+            <div id="medical" class="prestation" onclick="router('medic')">
+                <div class="prestation__img"><img src="images/icones/medic.jpg" alt=""></div>
+            </div>
+            <div id="scolaire" class="prestation" onclick="router('hobby')">
+                <div class="prestation__img"><img src="images/icones/loisir.jpg" alt=""></div>
+            </div>
+        </section>
     </main>
     <footer>
 
     </footer>
 </body>
 
-<script src="script/index.js"></script>
+<script src="script/router.js"></script>
 
 
 </html>

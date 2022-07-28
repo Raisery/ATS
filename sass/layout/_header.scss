@@ -35,7 +35,9 @@
         display: flex;
         list-style-type: none;
         & li {
+            position: relative;
             display: flex;
+            cursor: pointer;
             align-items: center;
             justify-content: center;
             margin-left: 10px;
@@ -48,9 +50,21 @@
             &:hover {
                 background: $primary_color;
                 color: $neutral-color;
-            }
+                &::before {
+                    background: $secondary_color;
+                }
 
+            }
+            &::before {
+                position: absolute;
+                content: "";
+                bottom: 25px;
+                width: 55%;
+                height: 5px;
+                background: $secondary_color;
+            }
         }
+        
 
     }
 }
