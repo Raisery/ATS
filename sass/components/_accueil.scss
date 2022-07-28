@@ -15,6 +15,7 @@
         z-index: 2;
         position: absolute;
         height: 50vw;
+        max-height: 800px;
     }
 
     & .accueil__text {
@@ -43,6 +44,7 @@
         z-index: 0;
         filter: brightness(1.5);
         height: 100%;
+        width: 100%;
         object-fit: cover;
     }
 }
